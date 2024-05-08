@@ -1,0 +1,12 @@
+firewall-cmd --list-ports
+firewall-cmd --list-services
+firewall-cmd --add-port=8081/tcp --permanent
+firewall-cmd --add-service=http --permanent
+firewall-cmd --list-forward-ports
+firewall-cmd --zone=public --add-port=8082/tcp --permanent
+firewall-cmd --get-zones
+firewall-cmd --get-services
+firewall-cmd --reload
+firewall-cmd --list-all
+firewall-cmd --set-default-zone=home
+
