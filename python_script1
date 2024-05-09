@@ -1,0 +1,15 @@
+username = input("Enter your username: ")
+password = input("Enter your password: ")
+confirm_password = input("Confirm your password: ")
+
+if password == confirm_password:
+  print("password matched")
+else :
+  print("password do not match")
+
+# output
+# Enter your username: vipul
+# Enter your password: vipul123
+# Confirm your password: vipul123
+# password matched
+
